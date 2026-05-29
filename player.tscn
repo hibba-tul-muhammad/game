@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://clb1bb46eay04"]
+
+[ext_resource type="Texture2D" uid="uid://cst7o5o1npuj4" path="res://pixilart-drawing.png" id="1_4flbx"]
+[ext_resource type="Script" uid="uid://mmb258r0ipki" path="res://player.gd" id="1_onrkg"]
+
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_onrkg"]
+radius = 174.0
+height = 592.0
+
+[node name="player" type="CharacterBody2D" unique_id=1835051238]
+script = ExtResource("1_onrkg")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=634581606]
+position = Vector2(822.5, 725)
+scale = Vector2(15.85, 15.88)
+texture = ExtResource("1_4flbx")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=244751121]
+position = Vector2(813, 651)
+shape = SubResource("CapsuleShape2D_onrkg")
