@@ -2,6 +2,8 @@
 
 [ext_resource type="PackedScene" uid="uid://clb1bb46eay04" path="res://player.tscn" id="1_ig7tw"]
 [ext_resource type="PackedScene" uid="uid://dvdpi2xr2tesl" path="res://platform.tscn" id="2_0xm2m"]
+[ext_resource type="PackedScene" uid="uid://w2ev3mtfr4oc" path="res://platform_2.tscn" id="3_h2yge"]
+[ext_resource type="PackedScene" uid="uid://be58v6le68nyu" path="res://goal.tscn" id="4_1bvp3"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ig7tw"]
 distance = -13.0
@@ -9,12 +11,21 @@ distance = -13.0
 [node name="Main" type="Node2D" unique_id=277396317]
 
 [node name="player" parent="." unique_id=1835051238 instance=ExtResource("1_ig7tw")]
-position = Vector2(-226, -312)
+position = Vector2(534, 344)
+scale = Vector2(0.15, 0.15)
+
+[node name="Camera2D" type="Camera2D" parent="player" unique_id=1208399443]
 
 [node name="ground" type="StaticBody2D" parent="." unique_id=891317346]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1503950069]
-position = Vector2(580, 614)
+position = Vector2(585, 634)
 shape = SubResource("WorldBoundaryShape2D_ig7tw")
 
 [node name="Platform" parent="." unique_id=1179360091 instance=ExtResource("2_0xm2m")]
+
+[node name="Platform2" parent="." unique_id=584611554 instance=ExtResource("3_h2yge")]
+position = Vector2(567, 561)
+
+[node name="Goal" parent="." unique_id=1313255398 instance=ExtResource("4_1bvp3")]
+position = Vector2(672, 508)
