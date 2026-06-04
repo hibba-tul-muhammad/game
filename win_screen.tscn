@@ -1,5 +1,7 @@
 [gd_scene format=3 uid="uid://wslsopq2wnas"]
 
+[ext_resource type="Script" uid="uid://kpa76o1lacd5" path="res://win_screen.gd" id="1_l2arl"]
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_731nq"]
 bg_color = Color(0.38959315, 0.14947993, 0.4948486, 1)
 
@@ -8,6 +10,7 @@ layout_mode = 3
 anchors_preset = 0
 offset_right = 1152.0
 offset_bottom = 650.0
+script = ExtResource("1_l2arl")
 
 [node name="Label" type="Label" parent="." unique_id=1001336245]
 layout_mode = 0
@@ -28,3 +31,5 @@ theme_override_colors/font_hover_color = Color(0.6159824, 0.7444126, 0.39061028,
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxFlat_731nq")
 text = "Play Again"
+
+[connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
