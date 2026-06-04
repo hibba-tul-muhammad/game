@@ -11,7 +11,7 @@ distance = -13.0
 [node name="Main" type="Node2D" unique_id=277396317]
 
 [node name="player" parent="." unique_id=1835051238 instance=ExtResource("1_ig7tw")]
-position = Vector2(534, 344)
+position = Vector2(639, 415)
 scale = Vector2(0.15, 0.15)
 
 [node name="Camera2D" type="Camera2D" parent="player" unique_id=1208399443]
@@ -19,13 +19,22 @@ scale = Vector2(0.15, 0.15)
 [node name="ground" type="StaticBody2D" parent="." unique_id=891317346]
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="ground" unique_id=1503950069]
-position = Vector2(585, 634)
+position = Vector2(583, 653)
 shape = SubResource("WorldBoundaryShape2D_ig7tw")
 
 [node name="Platform" parent="." unique_id=1179360091 instance=ExtResource("2_0xm2m")]
+
+[node name="Platform" parent="Platform" unique_id=1070359168 instance=ExtResource("2_0xm2m")]
+position = Vector2(225, 51)
+
+[node name="Platform" parent="Platform/Platform" unique_id=2141640561 instance=ExtResource("2_0xm2m")]
+position = Vector2(135, 119)
+
+[node name="Platform" parent="Platform/Platform/Platform" unique_id=691521082 instance=ExtResource("2_0xm2m")]
+position = Vector2(109, 126)
 
 [node name="Platform2" parent="." unique_id=584611554 instance=ExtResource("3_h2yge")]
 position = Vector2(567, 561)
 
 [node name="Goal" parent="." unique_id=1313255398 instance=ExtResource("4_1bvp3")]
-position = Vector2(672, 508)
+position = Vector2(-47, 90)

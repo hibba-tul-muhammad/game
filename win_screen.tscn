@@ -1,0 +1,30 @@
+[gd_scene format=3 uid="uid://wslsopq2wnas"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_731nq"]
+bg_color = Color(0.38959315, 0.14947993, 0.4948486, 1)
+
+[node name="WinScreen" type="Control" unique_id=1454699325]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 1152.0
+offset_bottom = 650.0
+
+[node name="Label" type="Label" parent="." unique_id=1001336245]
+layout_mode = 0
+offset_left = 355.0
+offset_top = 39.0
+offset_right = 778.0
+offset_bottom = 176.0
+theme_override_font_sizes/font_size = 100
+text = "You Win!"
+
+[node name="Button" type="Button" parent="." unique_id=1795434749]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 279.0
+offset_right = 861.0
+offset_bottom = 469.0
+theme_override_colors/font_hover_color = Color(0.6159824, 0.7444126, 0.39061028, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_731nq")
+text = "Play Again"
