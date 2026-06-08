@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://dvdpi2xr2tesl" path="res://platform.tscn" id="2_0xm2m"]
 [ext_resource type="PackedScene" uid="uid://w2ev3mtfr4oc" path="res://platform_2.tscn" id="3_h2yge"]
 [ext_resource type="PackedScene" uid="uid://be58v6le68nyu" path="res://goal.tscn" id="4_1bvp3"]
+[ext_resource type="PackedScene" uid="uid://bx3dv2kmataqe" path="res://enemy.tscn" id="5_lquwl"]
 
 [sub_resource type="WorldBoundaryShape2D" id="WorldBoundaryShape2D_ig7tw"]
 distance = -13.0
@@ -38,3 +39,8 @@ position = Vector2(567, 561)
 
 [node name="Goal" parent="." unique_id=1313255398 instance=ExtResource("4_1bvp3")]
 position = Vector2(-47, 90)
+
+[node name="Enemy" parent="." unique_id=1888189988 instance=ExtResource("5_lquwl")]
+position = Vector2(337, 179)
+scale = Vector2(2.5, 2.5)
+speed = null

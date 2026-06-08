@@ -1,0 +1,35 @@
+[gd_scene format=3 uid="uid://du1w8ac5s4cua"]
+
+[ext_resource type="Script" uid="uid://b23bbsamst07e" path="res://lose_screen.gd" id="1_cbtnu"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_h3ym8"]
+bg_color = Color(0.38959315, 0.14947993, 0.4948486, 1)
+
+[node name="LoseScreen" type="Control" unique_id=1586384824]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_cbtnu")
+
+[node name="Label" type="Label" parent="." unique_id=252357424]
+layout_mode = 0
+offset_left = 347.0
+offset_top = 37.0
+offset_right = 819.0
+offset_bottom = 177.0
+theme_override_font_sizes/font_size = 100
+text = "You Lose!"
+
+[node name="Button" type="Button" parent="." unique_id=1282337142]
+layout_mode = 0
+offset_left = 290.0
+offset_top = 279.0
+offset_right = 861.0
+offset_bottom = 469.0
+theme_override_colors/font_hover_color = Color(0.6159824, 0.7444126, 0.39061028, 1)
+theme_override_font_sizes/font_size = 50
+theme_override_styles/normal = SubResource("StyleBoxFlat_h3ym8")
+text = "Try Again"
